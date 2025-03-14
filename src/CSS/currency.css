@@ -1,30 +1,60 @@
-.currency-div{
+.currency-div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
     width: 450px;
-    height: 150px;
-    border: 1px solid black;
+    height: auto; /* Yüksekliği otomatik bırak */
+    padding: 20px;
+    background-color: #1a2648; /* İstersen arkaplan */
+    border-radius: 10px;
 }
-.amount{
-    width: 80px;
-    height: 25px;
-    margin-right: 10px;
-}
-.result{
-    width: 80px;
-    height: 25px;
 
+.currency-title {
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
 }
-.from-currency-option{
+
+.currency-input-row {
+    display: flex;
+    align-items: center; /* Dikey hizalama */
+    justify-content: center;
+    gap: 10px; /* Elemanlar arası boşluk */
+    margin-bottom: 15px;
+}
+
+.amount,
+.result {
+    width: 80px;
+    height: 30px;
+}
+
+.from-currency-option,
+.to-currency-option {
     width: 70px;
     height: 30px;
-    margin-right: 12px;
 }
-.to-currency-option{
-    width: 70px;
-    height: 30px;
-    margin-right: 12px;
+
+.arrow-icon {
+    color: #fff;
+    font-size: 30px;
+    /* Ortalamak için flex ile hizalanıyor zaten */
+}
+
+.exchange-button {
+    width: 100px;
+    height: 35px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.exchange-button:hover {
+    background-color: darkred;
 }
